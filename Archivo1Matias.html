@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas y Finanzas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gestor de Vida Diaria</h1>
+        <p>Tareas personales, finanzas y deudas entre amigos</p>
+        <hr>
+    </header>
+
+    <!-- SECCIÓN TAREAS -->
+    <section>
+        <h2>📋 Lista de Tareas</h2>
+
+        <p>Las tareas pueden ser personales, académicas o financieras.</p>
+
+        <form>
+            <label>Tarea:</label><br>
+            <input type="text" placeholder="Ej: Estudiar para el examen"><br><br>
+
+            <label>Tipo de tarea:</label><br>
+            <select>
+                <option>Personal</option>
+                <option>Académica</option>
+                <option>Laboral</option>
+                <option>Financiera</option>
+            </select><br><br>
+
+            <label>Impacto financiero (opcional):</label><br>
+            <select>
+                <option>Ninguno</option>
+                <option>Gasto</option>
+                <option>Ingreso</option>
+            </select><br><br>
+
+            <label>Monto (solo si aplica):</label><br>
+            <input type="number" placeholder="$"><br><br>
+
+            <button>Agregar tarea</button>
+        </form>
+
+        <h3>Tareas registradas</h3>
+        <table border="1">
+            <tr>
+                <th>Tarea</th>
+                <th>Tipo</th>
+                <th>Impacto</th>
+                <th>Monto</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>Estudiar para el examen</td>
+                <td>Académica</td>
+                <td>Ninguno</td>
+                <td>-</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td>Pagar internet</td>
+                <td>Financiera</td>
+                <td>Gasto</td>
+                <td>$30</td>
+                <td>Pendiente</td>
+            </tr>
+            <tr>
+                <td>Trabajo freelance</td>
+                <td>Laboral</td>
+                <td>Ingreso</td>
+                <td>$200</td>
+                <td>Completada</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+
+    <!-- SECCIÓN FINANZAS -->
+    <section>
+        <h2>💰 Finanzas Personales</h2>
+
+        <p>Solo se contabilizan tareas con impacto financiero.</p>
+
+        <ul>
+            <li>Ingresos del mes: $200</li>
+            <li>Gastos del mes: $30</li>
+            <li><strong>Balance: $170</strong></li>
+        </ul>
+
+        <h3>Movimientos financieros</h3>
+        <table border="1">
+            <tr>
+                <th>Origen</th>
+                <th>Tipo</th>
+                <th>Monto</th>
+            </tr>
+            <tr>
+                <td>Trabajo freelance</td>
+                <td>Ingreso</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Pagar internet</td>
+                <td>Gasto</td>
+                <td>$30</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+
+    <!-- SECCIÓN DEUDAS EN GRUPO -->
+    <section>
+        <h2>👥 Deudas en Grupo</h2>
+
+        <h3>Grupo: Viaje con amigos</h3>
+
+        <form>
+            <label>Descripción del gasto:</label><br>
+            <input type="text" placeholder="Ej: Cena"><br><br>
+
+            <label>Pagado por:</label><br>
+            <input type="text" placeholder="Ej: Juan"><br><br>
+
+            <label>Monto total:</label><br>
+            <input type="number" placeholder="$"><br><br>
+
+            <button>Registrar gasto</button>
+        </form>
+
+        <h3>Resumen de deudas</h3>
+        <table border="1">
+            <tr>
+                <th>Persona</th>
+                <th>Debe</th>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>$15</td>
+            </tr>
+        </table>
+
+        <p><strong>Total que te deben:</strong> $35</p>
+        <hr>e
+    </section>
+
+    <!-- SECCIÓN GRÁFICA SIMULADA -->
+    <section>
+        <h2>📊 Visualización Gráfica (simulada)</h2>
+
+        <p>Resumen visual de la información:</p>
+
+        <ul>
+            <li>██████████ Ingresos</li>
+            <li>██ Gastos</li>
+            <li>████ Deudas grupales</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Proyecto académico – HTML puro</p>
+    </footer>
+
+</body>
+</html>
