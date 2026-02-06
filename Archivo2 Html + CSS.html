@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas y Finanzas</title>
+
+    <style>
+        /* RESET BÁSICO */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header, section, footer {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        header p {
+            color: #666;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+
+        /* FORMULARIOS */
+        form {
+            margin-top: 15px;
+            background: #f9fafc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* TABLAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* LISTAS */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px;
+            background: #f2f6ff;
+            margin-bottom: 5px;
+            border-left: 5px solid #3498db;
+        }
+
+        /* SECCIÓN GRÁFICA */
+        section ul li {
+            font-family: monospace;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Gestor de Vida Diaria</h1>
+    <p>Tareas personales, finanzas y deudas entre amigos</p>
+</header>
+
+<section>
+    <h2>📋 Lista de Tareas</h2>
+    <p>Las tareas pueden ser personales, académicas o financieras.</p>
+
+    <form>
+        <label>Tarea:</label>
+        <input type="text" placeholder="Ej: Estudiar para el examen">
+
+        <label>Tipo de tarea:</label>
+        <select>
+            <option>Personal</option>
+            <option>Académica</option>
+            <option>Laboral</option>
+            <option>Financiera</option>
+        </select>
+
+        <label>Impacto financiero (opcional):</label>
+        <select>
+            <option>Ninguno</option>
+            <option>Gasto</option>
+            <option>Ingreso</option>
+        </select>
+
+        <label>Monto (solo si aplica):</label>
+        <input type="number" placeholder="$">
+
+        <button>Agregar tarea</button>
+    </form>
+
+    <h3>Tareas registradas</h3>
+    <table>
+        <tr>
+            <th>Tarea</th>
+            <th>Tipo</th>
+            <th>Impacto</th>
+            <th>Monto</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>Estudiar para el examen</td>
+            <td>Académica</td>
+            <td>Ninguno</td>
+            <td>-</td>
+            <td>Pendiente</td>
+        </tr>
+        <tr>
+            <td>Pagar internet</td>
+            <td>Financiera</td>
+            <td>Gasto</td>
+            <td>$30</td>
+            <td>Pendiente</td>
+        </tr>
+        <tr>
+            <td>Trabajo freelance</td>
+            <td>Laboral</td>
+            <td>Ingreso</td>
+            <td>$200</td>
+            <td>Completada</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>💰 Finanzas Personales</h2>
+
+    <ul>
+        <li>Ingresos del mes: $200</li>
+        <li>Gastos del mes: $30</li>
+        <li><strong>Balance: $170</strong></li>
+    </ul>
+</section>
+
+<section>
+    <h2>👥 Deudas en Grupo</h2>
+
+    <h3>Grupo: Viaje con amigos</h3>
+
+    <form>
+        <label>Descripción del gasto:</label>
+        <input type="text" placeholder="Ej: Cena">
+
+        <label>Pagado por:</label>
+        <input type="text" placeholder="Ej: Juan">
+
+        <label>Monto total:</label>
+        <input type="number" placeholder="$">
+
+        <button>Registrar gasto</button>
+    </form>
+
+    <h3>Resumen de deudas</h3>
+    <table>
+        <tr>
+            <th>Persona</th>
+            <th>Debe</th>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>$15</td>
+        </tr>
+    </table>
+
+    <p><strong>Total que te deben:</strong> $35</p>
+</section>
+
+<section>
+    <h2>📊 Visualización Gráfica (simulada)</h2>
+    <ul>
+        <li>██████████ Ingresos</li>
+        <li>██ Gastos</li>
+        <li>████ Deudas grupales</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Proyecto académico – HTML + CSS</p>
+</footer>
+
+</body>
+</html>
